@@ -1,0 +1,162 @@
+/* Dashboard.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar-header {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 20px 0;
+}
+
+.sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sidebar-menu a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  font-size: 1.2rem;
+}
+
+.logout-button {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+/* Additional styles for Conversations, Messages, and User Search components */
+
+.conversations-container, .messages-container, .user-search-container {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conversations-container h3, .messages-container h3, .user-search-container h3 {
+  margin-top: 0;
+}
+
+.conversations-container div, .messages-container div, .user-search-container div {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #f4f4f4;
+  cursor: pointer;
+}
+
+.conversations-container div:hover, .messages-container div:hover, .user-search-container div:hover {
+  background-color: #f4f4f4;
+}
+
+.messages-container form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.messages-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.messages-container button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.messages-container button:hover {
+  background-color: #45a049;
+}
+
+.user-search-container input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-search-container button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-search-container button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,16 @@
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "frontend/build"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
