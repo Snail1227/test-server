@@ -2,11 +2,11 @@
   base = "frontend"
   command = "npm run build"
   publish = "build"
-  functions = "netlify"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/server"
+  to = "/.netlify/functions/server"
   status = 200
   force = true
 
